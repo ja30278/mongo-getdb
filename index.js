@@ -61,3 +61,7 @@ getDb.init = function () {
 };
 
 getDb.hapi = require('./hapi')(getDb);
+
+getDb.instrument = function() {
+  return require('mongodb').instrument();
+};
